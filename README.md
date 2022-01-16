@@ -1,1 +1,1 @@
-# platzi-prectico-javascript
+# platzi-practico-javascript
