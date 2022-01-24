@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geómetricas | Practico javascript</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Figuras geómetricas</h1>
+
+    <header>
+        <h1>Figuras geómetricas</h1>
+        <p>Este es el primer taller del curso práctico de Javascript</p>
+    </header>
+
+    <main>
+
+        <section class="cuadrado">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <form action="">
+                <label for="inputCuadrado">
+                    Escribe cuando mide cada lado de tu cuadrado
+                </label>
+                <input type="number" id="inputCuadrado">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+                <label for="perimetroCuadrado">Perimetro</label>
+                <input type="text" id="perimetroCuadrado" readonly>
+                <label for="areaCuadrado">Area</label>
+                <input type="text" id="areaCuadrado" readonly>
+            </form>
+        </section>
+
+        <section class="circulo">
+            <h2>Calcula el area y perimetro de un circulo</h2>
+            <form action="">
+                <label for="inputCirculo">
+                    Escribe cuando mide el radio de tu circulo
+                </label>
+                <input type="number" id="inputCirculo">
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+
+                <label for="perimetroCirculo">Perimetro</label>
+                <input type="text" id="perimetroCirculo" readonly>
+                <label for="areaCirculo">Area</label>
+                <input type="text" id="areaCirculo" readonly>
+
+            </form>
+        </section>
+
+        <section class="triagulo">
+            <h2>Calcula el area y perimetro de un triángulo</h2>
+            <form action="">
+                <!-- Side 1 -->
+                <label for="lado1Triangulo">
+                    Escribe cuando mide primer lado del triangulo
+                </label>
+                <input type="number" id="lado1Triangulo" required>
+                <!-- Side 2 -->
+                <label for="lado2Triangulo">
+                    Escribe cuando mide segundo lado del triangulo
+                </label>
+                <input type="number" id="lado2Triangulo" required>
+                <!-- Triangle base -->
+                <label for="baseTriangulo">
+                    Escribe cuando mide la base del triangulo
+                </label>
+                <input type="number" id="baseTriangulo" required>
+                <!-- Height triangle-->
+                <label for="alturaTriangulo">
+                    Escribe cuando mide la altura del triangulo
+                </label>
+                <input type="number" id="alturaTriangulo" required>
+
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+                <label for="perimetroTriangulo">Perimetro</label>
+                <input type="text" id="perimetroTriangulo" readonly>
+                <label for="areaTriangulo">Area</label>
+                <input type="text" id="areaTriangulo" readonly>
+            </form>
+
+        </section>
+
+    </main>
+
     <script src="./figuras.js"></script>
 </body>
+
 </html>
